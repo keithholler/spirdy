@@ -1,0 +1,7 @@
+local M = {}
+
+M.gameProgress = 1 -- default to only having access to level 1
+M.currentLevel = 1 -- used to determine what level setup file needs to be loaded
+M.loadLevel = 0 -- used during level transitioning when player selects level to load resets to 0 after level loaded completely
+
+return M

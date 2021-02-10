@@ -1,0 +1,283 @@
+system.getInfo("model")
+
+display.setStatusBar(display.HiddenStatusBar)
+
+
+local centerY = display.contentCenterY
+local centerX = display.contentCenterX
+
+local composer = require( "composer" )
+
+local scene = composer.newScene()
+--local muteButton = require("muteButton")
+local widget = require("widget")
+local musicOn = require("bgMusic")
+-- -----------------------------------------------------------------------------------------------------------------
+-- All code outside of the listener functions will only be executed ONCE unless "composer.removeScene()" is called.
+-- -----------------------------------------------------------------------------------------------------------------
+
+-- local forward references should go here
+
+-- -------------------------------------------------------------------------------
+
+-- "scene:create()"
+function scene:create( event )
+
+    local sceneGroup = self.view
+
+    -- Initialize the scene here.
+    -- Example: add display objects to "sceneGroup", add touch listeners, etc.
+      local sHead = display.newImageRect("mainMenu/homebutton_hudtop.png", 713, 88)
+      local logoB = display.newImageRect("mainMenu/home_logoframe.png", 338, 64)
+      local spirdyLogo = display.newImageRect("mainMenu/homebutton_SLogo.png", 327, 103)
+      local uiLok = display.newImageRect("mainMenu/homebutton_hudconnector.png", 713, 404)
+      local sFooter1 = display.newImageRect("mainMenu/homebutton_hudleft.png", 357, 176)
+      local sFooter2 = display.newImageRect("mainMenu/homebutton_hudright.png", 357, 176)
+      local opt = display.newImageRect("mainMenu/homebutton_options.png", 174, 56)
+      local playSel = display.newImageRect("mainMenu/homebutton_playerS.png", 222, 52)
+      local fb = display.newImageRect("mainMenu/homebutton_facebook.png", 50, 50)
+      local st = display.newImageRect("mainMenu/homebutton_store.png", 172, 53)
+      local lb = display.newImageRect("mainMenu/homebutton_LeaderB.png", 220, 51)
+      local cred = display.newImageRect("mainMenu/homebutton_credits.png", 269, 68)
+      local twit = display.newImageRect("mainMenu/homebutton_twitter.png", 50, 50)
+      local playG = display.newImageRect("mainMenu/homebutton_play.png", 269, 70)
+      local myButton = display.newImageRect("buttonSel.png", 150, 50)
+      local muteB = display.newImageRect("mainMenu/speakerButton.png", 50, 50)
+      local muteOn = display.newImageRect("mainMenu/speakerMute.png", 50, 50)
+      
+      logoB.x = 355
+      logoB.y = 45
+      logoB.alpha = 0
+      
+      spirdyLogo.x = 355
+      spirdyLogo.y = 50
+      spirdyLogo.alpha = 0
+  
+      sHead.x = 355
+      sHead.y = -15
+      sHead.alpha = 0
+      
+      uiLok.x = 355
+      uiLok.y = 200
+      uiLok.alpha = 0
+      
+      sFooter1.x = -100
+      sFooter1.y = 313
+      sFooter1.alpha = 0
+  
+      sFooter2.x = 813
+      sFooter2.y = 313
+      sFooter2.alpha = 0
+  
+      opt.x = 88
+      opt.y = 255
+      opt.alpha = 0
+  
+      playSel.x = 114
+      playSel.y = 305
+      playSel.alpha = 0
+  
+      fb.x = 25
+      fb.y = 375
+      fb.alpha = 0
+  
+      st.x = 620
+      st.y = 255
+      st.alpha = 0
+  
+      lb.x = 596
+      lb.y = 303
+      lb.alpha = 0
+  
+      cred.x = 573
+      cred.y = 359
+      cred.alpha = 0
+  
+      twit.x = 684
+      twit.y = 373
+      twit.alpha = 0
+  
+      playG.x = 138
+      playG.y = 356
+      playG.alpha = 0
+      
+      muteB.x = 680
+      muteB.y = 26
+      muteB.alpha = 0
+            
+      muteOn.x = 680
+      muteOn.y = 26
+      muteOn.alpha = 0
+      
+      myButton.x = 170
+      myButton.y = 360
+      myButton.alpha = 0
+      
+      transition.to(sHead, {delay = 3000, time = 1000, alpha = 1, y = 43})
+      transition.to(logoB, {delay = 2000, time = 2500, alpha = 1})
+      transition.to(spirdyLogo, {delay = 2000, time = 2000, alpha = 1})
+      transition.to(uiLok, {delay = 4000, time = 1000, alpha = 1})
+      transition.to(sFooter1, {delay = 1000, time = 1250, alpha = 1, x = 177})
+      transition.to(sFooter2, {delay = 1000, time = 1250, alpha = 1, x = 533})
+      transition.to(opt, {delay = 2200, time = 1750, alpha = 1})
+      transition.to(playSel, {delay = 2200, time = 1750, alpha = 1})
+      transition.to(fb, {delay = 2200, time = 1750, alpha = 1})
+      transition.to(st, {delay = 2200, time = 1750, alpha = 1})
+      transition.to(lb, {delay = 2200, time = 1750, alpha = 1})
+      transition.to(cred, {delay = 2200, time = 1750, alpha = 1})
+      transition.to(twit, {delay = 2200, time = 1750, alpha = 1})
+      transition.to(playG, {delay = 2200, time = 1750, alpha = 1})
+      transition.to(muteB, {delay = 6500, time = 2000, alpha = 1})
+      transition.to(myButton, {delay = 5000, alpha = 1})
+      
+    function myButton:touch(event)
+     local phase = event.phase
+      if event.phase == "began" then
+        
+        local function go()
+          composer.gotoScene("modeSel")
+        end
+        
+        myButton:removeSelf()
+        myButton = nil    
+        transition.to(sHead, {time = 800, y = -40, alpha = 0})
+        transition.to(logoB, {time = 800, alpha = 0, y = -40})
+        transition.to(spirdyLogo, {time = 800, alpha = 0, y = -40})
+        transition.to(uiLok, {time = 800, alpha = 0})                
+        transition.to(st, {time = 540, x = 812 })
+        transition.to(lb, {time = 640, x = 827})
+        transition.to(cred, {time = 740, x = 847})
+        transition.to(twit, {time = 250, x = 762})
+        transition.to(opt, {time = 540, x = -99})
+        transition.to(playSel, {time = 640, x = -114})
+        transition.to(fb, {time = 250, x = -49})
+        transition.to(playG, {time = 740, x = -134})
+        transition.to(muteB, {time = 740, x = 800, alpha = 0})
+        transition.to(muteOn, {time = 740, x = 800, alpha = 0})
+        transition.to(sFooter1, {time = 1320, x = -300})
+        transition.to(sFooter2, {time = 1320, x = 1000, onComplete = go})      
+      
+        return true
+      end
+     end
+                
+  myButton:addEventListener("touch", myButton)
+  
+  function muteB:touch(event)
+    local phase = event.phase
+      if event.phase == "began" then
+      
+        muteB.alpha = 0
+        
+        muteOn.alpha = 1
+        
+        musicOn.soundOff()
+        
+        --muteSound()
+        
+        return true
+        
+    end
+  end
+      
+  muteB:addEventListener("touch", muteB)
+  
+  function muteOn:touch(event)
+    local phase = event.phase
+      if event.phase == "began" then
+      
+        muteB.alpha = 1
+        
+        muteOn.alpha = 0
+
+        musicOn.soundOn()
+        
+        --muteSound()
+        
+        return true
+        
+    end
+  end
+      
+  muteOn:addEventListener("touch", muteOn)
+  
+  sceneGroup:insert(sHead)
+      sceneGroup:insert(logoB)
+      sceneGroup:insert(spirdyLogo)
+      sceneGroup:insert(uiLok)
+      sceneGroup:insert(sFooter1)
+      sceneGroup:insert(sFooter2)
+      sceneGroup:insert(opt)
+      sceneGroup:insert(playSel)
+      sceneGroup:insert(fb)
+      sceneGroup:insert(st)
+      sceneGroup:insert(lb)
+      sceneGroup:insert(cred)
+      sceneGroup:insert(twit)
+      sceneGroup:insert(playG)
+      sceneGroup:insert(myButton)
+      sceneGroup:insert(muteB)
+      sceneGroup:insert(muteOn)
+end
+
+-- "scene:show()"
+function scene:show( event )
+
+    local sceneGroup = self.view
+    local phase = event.phase
+
+    if ( phase == "will" ) then
+        -- Called when the scene is still off screen (but is about to come on screen).
+      
+    elseif ( phase == "did" ) then
+        -- Called when the scene is now on screen.
+        -- Insert code here to make the scene come alive.
+        -- Example: start timers, begin animation, play audio, etc.
+        
+        --muteButton.muteTouch()
+        --muteButton.unMute()
+        composer.removeScene("modeSel")
+         
+    end
+end
+
+-- "scene:hide()"
+function scene:hide( event )
+
+    local sceneGroup = self.view
+    local phase = event.phase
+
+    if ( phase == "will" ) then
+        -- Called when the scene is on screen (but is about to go off screen).
+        -- Insert code here to "pause" the scene.
+        -- Example: stop timers, stop animation, stop audio, etc.
+          
+    elseif ( phase == "did" ) then
+        -- Called immediately after scene goes off screen.
+    end
+end
+
+
+-- "scene:destroy()"
+function scene:destroy( event )
+
+    local sceneGroup = self.view
+
+    -- Called prior to the removal of scene's view ("sceneGroup").
+    -- Insert code here to clean up the scene.
+    -- Example: remove display objects, save state, etc.
+                
+end
+
+
+-- -------------------------------------------------------------------------------
+
+-- Listener setup
+scene:addEventListener( "create", scene )
+scene:addEventListener( "show", scene )
+scene:addEventListener( "hide", scene )
+scene:addEventListener( "destroy", scene )
+
+-- -------------------------------------------------------------------------------
+
+return scene

@@ -1,0 +1,126 @@
+system.getInfo("model")
+
+display.setStatusBar(display.HiddenStatusBar)
+
+
+local centerY = display.contentCenterY
+local centerX = display.contentCenterX
+
+local composer = require( "composer" )
+
+local scene = composer.newScene()
+--local particles = require("particleEffects")
+local particleDesigner = require( "particleDesigner" )
+local bg, bg2, bg3, bg4
+
+-- -----------------------------------------------------------------------------------------------------------------
+-- All code outside of the listener functions will only be executed ONCE unless "composer.removeScene()" is called.
+-- -----------------------------------------------------------------------------------------------------------------
+
+-- local forward references should go here
+
+-- -------------------------------------------------------------------------------
+local emitter = particleDesigner.newEmitter( "pCloud2.json" )
+local emitter2 = particleDesigner.newEmitter( "pCloud.json" )
+local emitter3 = particleDesigner.newEmitter( "stars2.json" )
+local emitter4 = particleDesigner.newEmitter( "stars1.json" )
+         
+emitter.x = centerX
+emitter.y = centerY
+         
+emitter2.x = centerX
+emitter2.y = centerY
+         
+emitter3.x = centerX
+emitter3.y = centerY
+         
+emitter4.x = centerX
+emitter4.y = centerY
+         
+local bg = {}
+
+bg.background = function()
+
+         bg = display.newImageRect("nebula.png", 820, 820)
+         bg.x = centerX
+         bg.y = centerY
+         bg.alpha = 0
+         
+         bg2 = display.newImageRect("bgstars2.png", 820, 820)
+         bg2.x = centerX
+         bg2.y = centerY
+         bg2.alpha = 0
+         
+         bg3 = display.newImageRect("bgstars1.png", 700, 700)
+         bg3.x = centerX
+         bg3.y = centerY
+         bg3.alpha = 0
+         
+         bg4 = display.newImageRect("planets.png", 820, 820)
+         bg4.x = centerX
+         bg4.y = centerY
+         bg4.alpha = 0
+         
+         --particles.mainMenu()
+         emitter:start()
+         emitter2:start()
+         emitter3:start()
+         emitter4:start()
+         
+         local function bgRemove()
+           bg:removeSelf()
+           bg = nil
+         end
+         
+         transition.to(bg, {time = 3000, alpha = 1})
+         transition.to(bg2, {time = 3000, alpha = 1})
+         transition.to(bg3, {time = 3000, alpha = 1})
+         transition.to(bg4, {time = 3000, alpha = 1})
+         
+           local function rotateImg()
+            
+             transition.to(bg, {rotation = bg.rotation -360, time = 40000, onComplete = rotateImg, tag = "transTag" })
+             
+           end
+           
+           local function rotateImg2()
+           
+            transition.to(bg2, {rotation = bg2.rotation -360, time = 27000, onComplete = rotateImg2, tag = "transTag" })
+           
+           end
+           
+           local function rotateImg3()
+           
+            transition.to(bg3, {rotation = bg3.rotation -360, time = 24000, onComplete = rotateImg3, tag = "transTag" })
+           
+           end
+           
+           local function rotateImg4()
+           
+            transition.to(bg4, {rotation = bg4.rotation -360, time = 22000, onComplete = rotateImg4, tag = "transTag" })
+           
+           end
+          
+          transition.to(bg, {time = 40000, rotation = -360, onComplete = rotateImg, tag = "transTag"})
+          transition.to(bg2, {time = 27000, rotation = -360, onComplete = rotateImg2, tag = "transTag"})
+          transition.to(bg3, {time = 24000, rotation = -360, onComplete = rotateImg3, tag = "transTag"})
+          transition.to(bg4, {time = 22000, rotation = -360, onComplete = rotateImg4, tag = "transTag"})
+end
+
+bg.removeBg = function()
+  emitter:stop()
+  emitter2:stop()
+  emitter3:stop()
+  emitter4:stop()
+  transition.cancel("transTag")
+  bg:removeSelf()
+  bg = nil
+  bg2:removeSelf()
+  bg2 = nil
+  bg3:removeSelf()
+  bg3 = nil
+  bg4:removeSelf()
+  bg4 = nil
+end
+  
+return bg

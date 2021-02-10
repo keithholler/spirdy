@@ -1,0 +1,24 @@
+local centerY = display.contentCenterY
+local centerX = display.contentCenterX
+local leftSide = display.screenOriginX
+local rightSide = display.contentWidth - display.screenOriginX
+local topSide = display.screenOriginY
+local bottomSide = display.contentHeight - display.screenOriginY
+
+-- hide the status bar
+display.setStatusBar( display.HiddenStatusBar )
+
+-- include the Corona "composer" module
+local composer = require "composer"
+
+-- load menu screen
+local mem = require("misc.memTest")
+mem.createEasyMeter(centerX, 40, 800, 22)
+
+composer.loadScene( "playGame" )
+
+local function goTo()
+  composer.gotoScene( "playGame" )
+end
+
+timer.performWithDelay(2000, goTo)

@@ -1,0 +1,151 @@
+system.getInfo("model")
+
+display.setStatusBar(display.HiddenStatusBar)
+
+local centerY = display.contentCenterY
+local centerX = display.contentCenterX
+local screenLeft = display.screenOriginX
+local screenWidth = display.viewableContentWidth - screenLeft * 2
+local screenRight = screenLeft + screenWidth
+local screenTop = display.screenOriginY
+local screenHeight = display.viewableContentHeight - screenTop * 2
+local screenBottom = screenTop + screenHeight
+local screenTopSB = screenTop + display.topStatusBarContentHeight
+local screenHeightSB = display.viewableContentHeight - screenTopSB
+local screenBottomSB = screenTopSB + screenHeightSB
+
+local composer = require( "composer" )
+local backGround = require("bgScene")
+--local particles = require("particleEffects")
+
+-- Music for the main menu
+--[[local function mmMusic()
+  local musicOn = require("bgMusic")
+  musicOn.mmSound()
+end]]--
+
+-- Main Menu --
+local function loadIntro() 
+ --composer.loadScene("mainMenu")
+ local logoI = display.newImageRect("orphin_logov2.png", 400, 200)
+ logoI.x = centerX
+ logoI.y = centerY
+ logoI.alpha = 0
+  
+  local function trans()
+  
+   local tran = display.newImage("transition.png")
+   tran.x = centerX
+   tran.y = centerY
+   tran.alpha = 0
+    
+    local function coronaImage()
+      
+     local corona = display.newImageRect("corona.png", 600, 400)
+     corona.x = centerX
+     corona.y = centerY
+     corona.alpha = 0
+          
+      local function trans2()
+      
+       local tran2 = display.newImage("transition.png")
+       tran2.x = centerX
+       tran2.y = centerY
+       tran2.alpha = 0
+        
+        local function mainBG()
+		
+         corona:removeSelf()
+         corona = nil
+         tran2:removeSelf()
+         tran2 = nil
+         tran:removeSelf()
+         tran = nil
+         logoI:removeSelf()
+         logoI = nil
+         
+		     --[[mmMusic() 
+		     
+         local bg = display.newImageRect("nebula.png", 820, 820)
+         bg.x = centerX
+         bg.y = centerY
+         bg.alpha = 0
+         
+         local bg2 = display.newImageRect("bgstars2.png", 820, 820)
+         bg2.x = centerX
+         bg2.y = centerY
+         bg2.alpha = 0
+         
+         local bg3 = display.newImageRect("bgstars1.png", 700, 700)
+         bg3.x = centerX
+         bg3.y = centerY
+         bg3.alpha = 0
+         
+         local bg4 = display.newImageRect("planets.png", 820, 820)
+         bg4.x = centerX
+         bg4.y = centerY
+         bg4.alpha = 0
+         
+         particles.mainMenu()
+         
+         --Remove BG when another class is called
+         local function bgRemove()
+           bg:removeSelf()
+           bg = nil
+         end]]--
+		     backGround.background()
+		     composer.gotoScene("mainMenu")
+         
+         --[[transition.to(bg, {time = 3000, alpha = 1})
+         transition.to(bg2, {time = 3000, alpha = 1})
+         transition.to(bg3, {time = 3000, alpha = 1})
+         transition.to(bg4, {time = 3000, alpha = 1})
+              
+           local function rotateImg()
+            
+             transition.to(bg, {rotation = bg.rotation -360, time = 40000, onComplete = rotateImg })
+             
+           end
+           
+           local function rotateImg2()
+           
+            transition.to(bg2, {rotation = bg2.rotation -360, time = 27000, onComplete = rotateImg2 })
+           
+           end
+           
+           local function rotateImg3()
+           
+            transition.to(bg3, {rotation = bg3.rotation -360, time = 24000, onComplete = rotateImg3 })
+           
+           end
+           
+           local function rotateImg4()
+           
+            transition.to(bg4, {rotation = bg4.rotation -360, time = 22000, onComplete = rotateImg4 })
+           
+           end
+          
+          transition.to(bg, {time = 40000, rotation = -360, onComplete = rotateImg})
+          transition.to(bg2, {time = 27000, rotation = -360, onComplete = rotateImg2})
+          transition.to(bg3, {time = 24000, rotation = -360, onComplete = rotateImg3})
+          transition.to(bg4, {time = 22000, rotation = -360, onComplete = rotateImg4})]]--
+          
+        end
+        
+       transition.to(tran2, {time = 2000, alpha = 1, onComplete = mainBG})
+
+      end
+  
+     transition.to(corona, {time = 3000, alpha = 1, onComplete = trans2})
+      
+    end
+      
+   transition.to(tran, {time = 1000, alpha = 1, onComplete = coronaImage})
+      
+  end
+  
+ transition.to(logoI, {time = 3000, alpha = 1, onComplete = trans})
+  
+end 
+
+loadIntro()

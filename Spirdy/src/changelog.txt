@@ -1,0 +1,14 @@
+-- version 01.05:
+  Added a change log to the project folder
+  Changed FPS to 60
+  Adjusted timers and moved remove functions into touch listeners instead of transition.to
+
+-- version 01.05.05
+  Added D-Pad with multi touch to the challenge mode and replaced sliders
+  Added pause methods for when Spirdy collides with an obstactle in normal mode
+
+-- version 01.05.06
+  Added all current scenes to the sceneGroup() to allow for removing and purging scenes
+  Updated the physics around the asteroids
+  Added pause menu
+  Added game over menu

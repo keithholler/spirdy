@@ -1,0 +1,23 @@
+-- Supported values for orientation:
+-- portrait, portraitUpsideDown, landscapeLeft, landscapeRight
+
+settings = {
+	
+	orientation = {
+		default = "landscapeRight",
+		supported = { "landscapeLeft", }
+	},
+
+	-- Android permissions
+
+android =
+{
+		versionCode = "1"
+},
+
+	androidPermissions = {
+		"android.permission.VIBRATE",
+  		"android.permission.INTERNET",
+	
+  	}
+}

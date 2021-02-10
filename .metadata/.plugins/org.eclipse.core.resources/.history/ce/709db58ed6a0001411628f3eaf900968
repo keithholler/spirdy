@@ -1,0 +1,111 @@
+system.getInfo("model")
+
+display.setStatusBar(display.HiddenStatusBar)
+
+local centerY = display.contentCenterY
+local centerX = display.contentCenterX
+
+local M = {}
+
+local spirdyLogo
+local logoB
+local sHead
+local uiLock
+
+M.mainMenu = function()
+
+  sHead = display.newImageRect("mainMenu/homebutton_hudtop.png", 713, 88)
+  logoB = display.newImageRect("mainMenu/home_logoframe.png", 338, 64)
+  spirdyLogo = display.newImageRect("mainMenu/homebutton_SLogo.png", 327, 103)
+  uiLock = display.newImageRect("mainMenu/homebutton_hudconnector.png", 713, 404)
+      
+  logoB.x = 355
+  logoB.y = 45
+  logoB.alpha = 0
+      
+  spirdyLogo.x = 355
+  spirdyLogo.y = 50
+  spirdyLogo.alpha = 0
+  
+  sHead.x = 355
+  sHead.y = -15
+  sHead.alpha = 0
+  
+  uiLock.x = 355
+  uiLock.y = 200
+  uiLock.alpha = 0
+
+  transition.to(sHead, {delay = 3000, time = 1000, alpha = 1, y = 43})
+  transition.to(logoB, {delay = 2000, time = 2500, alpha = 1})
+  transition.to(spirdyLogo, {delay = 2000, time = 2000, alpha = 1})
+  transition.to(uiLock, {delay = 5500, time = 2000, alpha = 1})
+end
+
+M.modeSel = function()
+  sHead = display.newImageRect("mainMenu/homebutton_hudtop.png", 713, 88)
+  logoB = display.newImageRect("mainMenu/home_logoframe.png", 338, 64)
+  spirdyLogo = display.newImageRect("mainMenu/homebutton_SLogo.png", 327, 103)
+  uiLock = display.newImageRect("mainMenu/homebutton_hudconnector.png", 713, 404)
+      
+  logoB.x = 355
+  logoB.y = 45
+  logoB.alpha = 0
+      
+  spirdyLogo.x = 355
+  spirdyLogo.y = 50
+  spirdyLogo.alpha = 0
+  
+  sHead.x = 355
+  sHead.y = -15
+  sHead.alpha = 0
+  
+  uiLock.x = 355
+  uiLock.y = 200
+  uiLock.alpha = 0
+
+  transition.to(sHead, {delay = 3000, time = 1000, alpha = 1, y = 43})
+  transition.to(logoB, {delay = 2000, time = 2500, alpha = 1})
+  transition.to(spirdyLogo, {delay = 2000, time = 2000, alpha = 1})
+  transition.to(uiLock, {delay = 5500, time = 2000, alpha = 1})
+end
+
+M.levelSel = function()
+  sHead = display.newImageRect("mainMenu/homebutton_hudtop.png", 713, 88)
+  logoB = display.newImageRect("mainMenu/home_logoframe.png", 338, 64)
+  spirdyLogo = display.newImageRect("mainMenu/homebutton_SLogo.png", 327, 103)
+  uiLock = display.newImageRect("mainMenu/homebutton_hudconnector.png", 713, 404)
+      
+  logoB.x = 355
+  logoB.y = 45
+  logoB.alpha = 0
+      
+  spirdyLogo.x = 355
+  spirdyLogo.y = 50
+  spirdyLogo.alpha = 0
+  
+  sHead.x = 355
+  sHead.y = -15
+  sHead.alpha = 0
+  
+  uiLock.x = 355
+  uiLock.y = 200
+  uiLock.alpha = 0
+
+  transition.to(sHead, {delay = 3000, time = 1000, alpha = 1, y = 43})
+  transition.to(logoB, {delay = 2000, time = 2500, alpha = 1})
+  transition.to(spirdyLogo, {delay = 2000, time = 2000, alpha = 1})
+  transition.to(uiLock, {delay = 5500, time = 2000, alpha = 1})
+end
+
+M.remove = function()
+  sHead:removeSelf()
+  sHead = nil
+  logoB:removeSelf()
+  logoB = nil
+  spirdyLogo:removeSelf()
+  spirdyLogo = nil
+  uiLock:removeSelf()
+  uiLock = nil
+end
+
+return M

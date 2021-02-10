@@ -1,0 +1,81 @@
+system.getInfo("model")
+
+display.setStatusBar(display.HiddenStatusBar)
+local part = {}
+
+local json = require "json"
+local centerY = display.contentCenterY
+local centerX = display.contentCenterX
+
+-- Particle Effects Main Menu
+part.mainMenu = function()
+  
+  -- Read the exported Particle Designer file (JSON) into a string
+  local filePath = system.pathForFile( "pCloud2.json" )
+  local f = io.open( filePath, "r" )
+  local fileData = f:read( "*a" )
+  f:close()
+                        
+  -- Decode the string
+  local emitterParams = json.decode( fileData )
+                        
+  local emitter = display.newEmitter( emitterParams )
+  emitter.x = centerX
+  emitter.y = centerY
+                        
+  -- Read the exported Particle Designer file (JSON) into a string
+  local filePath2 = system.pathForFile( "pCloud.json" )
+  local f2 = io.open( filePath2, "r" )
+  local fileData2 = f2:read( "*a" )
+  f2:close()
+                        
+  -- Decode the string
+  local emitterParams2 = json.decode( fileData2 )
+                        
+  local emitter2 = display.newEmitter( emitterParams2 )
+  emitter2.x = centerX
+  emitter2.y = centerY
+                        
+  -- Read the exported Particle Designer file (JSON) into a string
+  local filePath4 = system.pathForFile( "stars2.json" )
+  local f4 = io.open( filePath4, "r" )
+  local fileData4 = f4:read( "*a" )
+  f4:close()
+                        
+  -- Decode the string
+  local emitterParams4 = json.decode( fileData4 )
+                        
+  local emitter4 = display.newEmitter( emitterParams4 )
+  emitter4.x = centerX
+  emitter4.y = centerY
+
+    -- Read the exported Particle Designer file (JSON) into a string
+  local filePath5 = system.pathForFile( "stars1.json" )
+  local f5 = io.open( filePath5, "r" )
+  local fileData5 = f5:read( "*a" )
+  f5:close()
+                        
+  -- Decode the string
+  local emitterParams5 = json.decode( fileData5 )
+                        
+  local emitter5 = display.newEmitter( emitterParams5 )
+  emitter5.x = centerX
+  emitter5.y = centerY
+                      
+end
+
+part.boost = function(fileName, baseDir)
+
+   local filePath = system.pathForFile( fileName, baseDir )
+   local f = io.open( filePath, "r" )
+   local fileData = f:read( "*a" )
+   f:close()
+
+   local emitterParams = json.decode( fileData )
+   local emitter = display.newEmitter( emitterParams )
+
+   return emitter
+   
+end
+
+return part

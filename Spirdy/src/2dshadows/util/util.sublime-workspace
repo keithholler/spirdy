@@ -1,0 +1,1034 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"trans",
+				"transition.to()	transition"
+			],
+			[
+				"transition",
+				"transition.to()	transition"
+			],
+			[
+				"newimag",
+				"display.newImageRect()	display"
+			],
+			[
+				"for",
+				"for	for i=1,10"
+			],
+			[
+				"shadow",
+				"shadowCasters"
+			],
+			[
+				"setCol",
+				"setFillColor()	ShapeObject"
+			],
+			[
+				"Vector",
+				"Vector2D:Sub"
+			],
+			[
+				"remo",
+				"Remove"
+			],
+			[
+				"shad",
+				"shadowGroup"
+			],
+			[
+				"new",
+				"display.newLine()	display"
+			],
+			[
+				"setC",
+				"setColor()	LineObject"
+			],
+			[
+				"hal",
+				"halfH"
+			],
+			[
+				"half",
+				"halfW"
+			],
+			[
+				"newImag",
+				"display.newImageRect()	display"
+			],
+			[
+				"insr",
+				"insert()	GroupObject"
+			],
+			[
+				"table",
+				"table.insert()	table"
+			],
+			[
+				"pullerV",
+				"pullerV"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"appl",
+				"applyLinearImpulse()	Body"
+			],
+			[
+				"math",
+				"math.random()	math"
+			],
+			[
+				"y",
+				"y"
+			],
+			[
+				"a",
+				"airFriction"
+			],
+			[
+				"cur",
+				"curGlobalPos"
+			],
+			[
+				"setL",
+				"setLinearVelocity()	Body"
+			],
+			[
+				"Vector2",
+				"Vector2D:new"
+			],
+			[
+				"rotat",
+				"rotation"
+			],
+			[
+				"apply",
+				"applyAngularImpulse()	Body"
+			],
+			[
+				"set",
+				"physics.setGravity()	physics"
+			],
+			[
+				"ra",
+				"math.random()	math"
+			],
+			[
+				"pa",
+				"parallaxFactor"
+			],
+			[
+				"group",
+				"sceneGroup"
+			],
+			[
+				"s",
+				"audio.stop()	audio"
+			],
+			[
+				"vent",
+				"ventEnergy"
+			],
+			[
+				"nativefnt",
+				"native.systemFont	native"
+			],
+			[
+				"pl",
+				"audio.play()	audio"
+			],
+			[
+				"transi",
+				"transition.fadeOut()	transition"
+			],
+			[
+				"newIma",
+				"display.newImageRect()	display"
+			],
+			[
+				"pLay",
+				"pLayerWidth"
+			],
+			[
+				"p",
+				"parentY"
+			],
+			[
+				"pare",
+				"parentX"
+			],
+			[
+				"create",
+				"createbackup"
+			],
+			[
+				"timer",
+				"timer.performWithDelay()	timer"
+			],
+			[
+				"is",
+				"isVisible"
+			],
+			[
+				"score",
+				"scoreWashedCounter"
+			],
+			[
+				"self.is",
+				"self.isDirty"
+			],
+			[
+				"Leve",
+				"PauseLevel"
+			],
+			[
+				"checkbox",
+				"checkboxHints"
+			],
+			[
+				"math.ra",
+				"math.random()	math"
+			],
+			[
+				"tranistion.to",
+				"transition.to()	transition"
+			],
+			[
+				"audio.is",
+				"audio.isChannelPlaying()	audio"
+			],
+			[
+				"add",
+				"addEventListener()	EventListener"
+			],
+			[
+				"systemF",
+				"native.systemFont	native"
+			],
+			[
+				"setSe",
+				"setSequence()	SpriteObject"
+			],
+			[
+				"requier",
+				"require()	package"
+			],
+			[
+				"dispstg",
+				"display.currentStage	display"
+			],
+			[
+				"display.new",
+				"display.newGroup()	display"
+			],
+			[
+				"display.New",
+				"display.newGroup()	display"
+			],
+			[
+				"stag",
+				"display.getCurrentStage"
+			],
+			[
+				"table.in",
+				"table.indexOf()	table"
+			],
+			[
+				"mathra",
+				"math.random()	math"
+			],
+			[
+				"self.image",
+				"self.imageSponge.x"
+			],
+			[
+				"transition.mo",
+				"transition.moveTo()	transition"
+			],
+			[
+				"requ",
+				"require()	package"
+			],
+			[
+				"self.go",
+				"self.goY"
+			],
+			[
+				"Update",
+				"UpdateDebugText"
+			],
+			[
+				"self.dirt",
+				"self.dirtyAmount"
+			],
+			[
+				"physics.p",
+				"physics.pause()	physics"
+			],
+			[
+				"dispa",
+				"dispatchEvent()	EventListener"
+			],
+			[
+				"audio",
+				"audio.stop()	audio"
+			],
+			[
+				"audio.fade",
+				"audio.fadeOut()	audio"
+			],
+			[
+				"sequ",
+				"sequenceData"
+			],
+			[
+				"tit",
+				"titleLogo"
+			],
+			[
+				"music",
+				"musicTitle"
+			],
+			[
+				"display.newIm",
+				"display.newImageRect()	display"
+			],
+			[
+				"nil",
+				"nil"
+			],
+			[
+				"self.",
+				"self.inventory"
+			],
+			[
+				"ptx",
+				"ptx"
+			],
+			[
+				"content",
+				"contentToLocal()	DisplayObject"
+			],
+			[
+				"local",
+				"localToContent()	DisplayObject"
+			],
+			[
+				"_",
+				"_W"
+			],
+			[
+				"Rese",
+				"ResetQueue"
+			],
+			[
+				"Reset",
+				"ResetInventory"
+			],
+			[
+				"composer.",
+				"composer.removeScene"
+			],
+			[
+				"isGam",
+				"isGameOverScreen"
+			],
+			[
+				"isG",
+				"isGameOverScreen"
+			],
+			[
+				"scene",
+				"sceneGroup"
+			],
+			[
+				"display.newImag",
+				"display.newImageRect()	display"
+			],
+			[
+				"x",
+				"x	DisplayObject"
+			],
+			[
+				"math.r",
+				"math.random()	math"
+			],
+			[
+				"wasg",
+				"washgut1"
+			],
+			[
+				"rqe",
+				"require"
+			],
+			[
+				"display.newIma",
+				"display.newImageRect()	display"
+			],
+			[
+				"display.",
+				"display.contentWidth	display"
+			],
+			[
+				"display",
+				"display.contentWidth"
+			],
+			[
+				"dispconce",
+				"display.contentCenterX"
+			],
+			[
+				"media.Ca",
+				"media.capturePhoto	media"
+			],
+			[
+				"remove",
+				"removeSelf()	Joint"
+			],
+			[
+				"remov",
+				"removeSelf()	DisplayObject"
+			],
+			[
+				"print",
+				"print()	global"
+			],
+			[
+				"seke",
+				"skeleton"
+			],
+			[
+				"transi.to",
+				"transition.to()	transition"
+			],
+			[
+				"transit",
+				"transition.to()	transition"
+			],
+			[
+				"displanewI",
+				"display.newImageRect()	display"
+			],
+			[
+				"dispconty",
+				"display.contentCenterY	display"
+			],
+			[
+				"display.ce",
+				"display.contentCenterX	display"
+			],
+			[
+				"displ",
+				"display.contentHeight	display"
+			],
+			[
+				"displa",
+				"display.contentWidth	display"
+			],
+			[
+				"display.c",
+				"display.contentHeight	display"
+			],
+			[
+				"nativs",
+				"native.showAlert()	native"
+			],
+			[
+				"system.g",
+				"system.getInfo()	system"
+			],
+			[
+				"rq",
+				"require"
+			],
+			[
+				"CFB",
+				"CFBundleIconFile"
+			],
+			[
+				"display.ne",
+				"display.newImage()	display"
+			],
+			[
+				"myT",
+				"myTextObject"
+			],
+			[
+				"display.curr",
+				"display.currentStage	display"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"setF",
+				"setFillColor()	ShapeObject"
+			],
+			[
+				"display.n",
+				"display.newText()	display"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "centeredMultilineText.lua",
+			"settings":
+			{
+				"buffer_size": 1607,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "TicBoom Free Version",
+	"command_palette":
+	{
+		"height": 347.0,
+		"selected_items":
+		[
+			[
+				"packag",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"cor",
+				"Set Syntax: Corona SDK Lua"
+			],
+			[
+				"coro",
+				"Set Syntax: Corona SDK Lua"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"print",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Discover Packages"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"paka",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Volumes/Macintosh HD 2/Projekte_Corona/Libraries/util"
+	],
+	"file_history":
+	[
+		"/Volumes/Macintosh HD 2/Projekte_Corona/Libraries/util/storehelper.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/Libraries/util/preference.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/Libraries/util/bezier.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/Libraries/util/vector2d.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/Libraries/util/device.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/util/vector2d.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/Libraries/util/helper.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/Libraries/util/centeredMultilineText.lua",
+		"/Volumes/Daten/reneaye/Desktop/helper.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/shadowsystem/level2.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/shadowsystem/2dshadows/shadows.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/shadowsystem/level1.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/shadowsystem/2dshadows/light.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/shadowsystem/2dshadows/shadowmath.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/shadowsystem/2dshadows/vector2d.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/shadowsystem/2dshadows/helper.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/shadowsystem/2dshadows/shadowCaster.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/shadowsystem/menu.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/shadowsystem/2dshadows/Light.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/Classes/Objects/Hive.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/Classes/Globals.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/shadowsystem/build.settings",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/shadowsystem/config.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/build.settings",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/config.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/Classes/Object.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/Classes/Objects/Puller.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/Classes/Objects/PullerHV.lua",
+		"/Volumes/Daten/reneaye/Desktop/project_assets_files_v1.1/be_assets_listview.css",
+		"/Volumes/Daten/reneaye/Downloads/mm_assets.sql",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/Classes/Objects/PullerTarget.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/Classes/Objects/PullerV.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/Classes/Objects/PullerH.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/util/helper.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/Classes/Objects/Breed.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/Classes/Camera.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/levelloader.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/levelfinished.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/menu.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/util/file.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/levelselect.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/Classes/SFX.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/Libraries/CBEffects/SampleCache/GettingStarted/LoadPreset.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/Libraries/CBEffects/CBEffects/cbe_core/misc/presets.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/maps/map_0-0.lua",
+		"/Volumes/Daten/reneaye/Dropbox/LernwoerterProject/Lernwoerter/build.settings",
+		"/Volumes/Daten/reneaye/Dropbox/LernwoerterProject/Lernwoerter/config.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/util/saveloadtable.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/system/fontmanager.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/skubProject/skub/Classes/Objects/ButtonAddUser.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicBoomProject/TicBoom/menu.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicBoomProject/TicBoom/level1.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicBoomProject/TicBoom/main.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicBoomProject/TicBoom/config.lua",
+		"/Volumes/Daten/reneaye/Downloads/Adobe After Effects CC 2014 13.1.1 10-25-2014.log",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicBoomProject/TicBoom/build/runOnAndroidDevice.py",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicBoomProject/TicBoom/build.settings-free",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicBoomProject/TicBoom/build.settings-paid",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicBoomProject/TicBoom/build.settings",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicBoomProject/TicBoom/build/buildFreeVersion.py",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicBoomProject/TicBoom/build/buildPaidVersion.py",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicBoomProject/TicBoom/buildsettings-free",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicBoomProject/TicBoom/buildsettings-paid",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicBoomProject/TicBoom/build/build.py",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicBoomProject/TicBoom/filename",
+		"/Volumes/Daten/reneaye/Downloads/Download",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicBoomProject/TicBoom/buildnumber-paid",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicBoomProject/TicBoom/ticboom.sublime-project",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicBoomProject/TicBoom/ticboom.sublime-workspace",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/CBEffects/CBEffects/cbe_core/core.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicTicBoomProject/TicTicBoom/CBEffects/cbe_core/vent_core/core.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/level2.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicTicBoomProject/TicTicBoom/build.settings",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicTicBoomProject/TicTicBoom/adsettings.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicTicBoomProject/TicTicBoom/img/panel@2x.png",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicTicBoomProject/TicTicBoom/main.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicTicBoomProject/TicTicBoom/Util/helper.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicTicBoomProject/TicTicBoom/util/text.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicTicBoomProject/TicTicBoom/Classes/Debug.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicTicBoomProject/TicTicBoom/Classes/Bomb.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicTicBoomProject/TicTicBoom/level1.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicTicBoomProject/TicTicBoom/menu.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Class.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/main.lua",
+		"/Volumes/Macintosh HD 2/Projekte_Corona/TicTicBoomProject/TicTicBoom/config.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/config.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/build.settings",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/BelimedNewsReader.lua",
+		"/Volumes/Rene/Kunden/Pyropixel/2014_09_18_metamodels.pyropixel.de Backup/db1013971-contao33_2014_09_18_10_49 2.sql/db1013971-contao33_2014_09_18_10_49.sql",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/animationstest.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/Objects/ExitSale.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/Objects/Kanister.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/gameover.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/menu.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/titlescreen.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/Player.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/Stack.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/Objects/PH810.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/splashscreen.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/CBEffects/cbe_core/misc/presets_legacygraphics.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/pause.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/SFX.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/Objects/ExitLabor.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/Objects/Washgood.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/settings.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/tutor08.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/LocalDB.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/tutor01.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/Objects/PST.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/sfx/electricity.wav",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/CharacterAnim.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/CharacterAnimReflectionSequences.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/CharacterAnimSequences.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/CharacterReflectionAnim.lua",
+		"/Volumes/Daten/reneaye/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Volumes/Daten/reneaye/Library/Application Support/Sublime Text 3/Packages/User/CoronaSDK-SublimeText/Snippets/Other/composer.sublime-snippet",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/tutor07.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/tutor06.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/tutor05.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/tutor04.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/tutor03.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/tutor02.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/tutor00.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/CharacterReflectionAnim0.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/CharacterReflectionAnim1.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/Classes/Object.lua",
+		"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/util/helper.lua",
+		"/Volumes/Daten/reneaye/Desktop/SingleInfoboxes.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizer/",
+			"/Volumes/Daten/reneaye/Dropbox/SteriDash/Sterilizerres",
+			"/Volumes/Daten/reneaye/Desktop/metamodels/system/modules,/Volumes/Daten/reneaye/Desktop/metamodels/system/modules/contaomaps,/Volumes/Daten/reneaye/Desktop/metamodels/system/modules/contaomaps_demosupplier,/Volumes/Daten/reneaye/Desktop/metamodels/system/modules/contaomaps_google,/Volumes/Daten/reneaye/Desktop/metamodels/system/modules/contaomaps_gpx,/Volumes/Daten/reneaye/Desktop/metamodels/system/modules/contaomaps_layer_metamodels",
+			"/Volumes/Daten/reneaye/Desktop/metamodels/system/modules"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"intensity",
+			"flares",
+			"shape",
+			"DebugDrawShapes",
+			"shapes",
+			"Shapes",
+			"shapes",
+			"isRotateable",
+			"shadowGroup",
+			"h",
+			"k",
+			"butDebugText",
+			"self.debug",
+			"shadows.debug",
+			"math.",
+			"math.floor",
+			"math.",
+			"math",
+			"math.sqrt",
+			"i",
+			"shadows",
+			"180",
+			"90",
+			"light",
+			"Light",
+			"light",
+			"Light",
+			"light",
+			"Light",
+			"20",
+			"pentagon.y",
+			"pentagon.x",
+			"i",
+			"vLV",
+			"vVertex",
+			"light",
+			"hive",
+			"object",
+			"Object",
+			"object",
+			"Object",
+			"object",
+			"Object",
+			"object",
+			"Object",
+			"object",
+			"Object",
+			"object",
+			"Object",
+			"object",
+			"Object",
+			"object",
+			"Object",
+			"object",
+			"Object",
+			"object",
+			"Object",
+			"transitionTremor",
+			"hive",
+			"map",
+			".tm",
+			"object",
+			"timer",
+			"tm",
+			"debugText",
+			"DEBUG",
+			"DEBU",
+			"debugText.text",
+			"debugText",
+			"object",
+			"puller",
+			"PullerHV",
+			"pullerHV",
+			"PullerHV",
+			"butLevels[x]",
+			"x",
+			"CountLeves",
+			"RotateToLocalPoint",
+			"x",
+			"boidVel",
+			"V",
+			"v",
+			"breed",
+			"parentX",
+			"mapreader",
+			"MapReader",
+			"mapreader",
+			"MapReader",
+			"mapreader",
+			"isEnergy",
+			"IsEnergy",
+			"isEnergy",
+			"pParent",
+			"markX",
+			"bomb",
+			"hive",
+			"Hive",
+			"puller",
+			"PullerHV",
+			"butSettings",
+			"butScores",
+			"isEnergyPuller",
+			"IsEnergyPuller",
+			"isEnergyPuller",
+			"self.parent",
+			"object",
+			"butHome",
+			"targetHV",
+			"Puller",
+			"puller",
+			"PullerHV",
+			"justify",
+			"ERROR",
+			"newCenteredMultilineText",
+			"loopGroup",
+			"exportstring",
+			"map",
+			"Map",
+			"PullerH",
+			"pullerH",
+			"PullerH",
+			"object",
+			"Object",
+			"object",
+			"Object",
+			"object",
+			"Object",
+			"PullerH"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"settingsSFXVolume",
+			"settingsMusicVolume",
+			"infobox",
+			"$id",
+			"gmap1"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "centeredMultilineText.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".",
+									"selector": "source.lua.corona"
+								}
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CoronaSDK-SublimeText/CoronaSDKLua.tmLanguage",
+							"tab_size": 8,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 257.0
+	},
+	"output.find_results":
+	{
+		"height": 282.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"project": "util.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"player",
+				"Classes/Player.lua"
+			],
+			[
+				"stack",
+				"Classes/Stack.lua"
+			],
+			[
+				"ph8",
+				"Objects/PH810.lua"
+			],
+			[
+				"local",
+				"Classes/LocalDB.lua"
+			],
+			[
+				"sfx",
+				"Classes/SFX.lua"
+			],
+			[
+				"washg",
+				"Objects/Washgood.lua"
+			],
+			[
+				"exi",
+				"Objects/ExitLabor.lua"
+			],
+			[
+				"exitsa",
+				"Objects/ExitSale.lua"
+			],
+			[
+				"was",
+				"Objects/Washgood.lua"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Volumes/Daten/reneaye/Desktop/SpaceShuttle/sts.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 293.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

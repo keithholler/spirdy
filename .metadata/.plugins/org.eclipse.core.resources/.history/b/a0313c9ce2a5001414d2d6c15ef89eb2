@@ -1,0 +1,222 @@
+-- Not currently in use by the program!
+
+-----------------------------------------------------------------------------------------
+--
+-- main.lua
+--
+-----------------------------------------------------------------------------------------
+--
+--This is the class that houses the challenge mode slider function
+--
+-- replace the preloaded widget libraries with custom libraries
+local function onRequireWidgetLibrary(name)
+	return require("widgets." .. name)
+end
+package.preload.widget = onRequireWidgetLibrary
+package.preload.widget_slider = onRequireWidgetLibrary
+package.preload.widget_switch = onRequireWidgetLibrary
+
+--declare necessary libraries
+local physics = require( "physics" ) -- required for physics engine
+local composer = require( "composer" ) -- required for scene manager
+local widget = require( "widget" ) -- required for sliders
+physics.start() -- start physics
+system.activate( "multitouch" ) -- enable multitouch functionality
+
+-- pre-declare variable
+local touchX, touchY
+local thrustX, thrustY
+local xSpeed = 0
+local ySpeed = 0
+local thrustTimer
+local plSpeed = 9
+local vMultiplier = 50
+local neutralMin = 45
+local neutralMax = 55
+local ruleSet = 2
+
+-- set gravity
+--physics.setGravity( 0, 0 )
+
+--[[local wallMaterial = { density=1.0, friction=0.3, bounce=0.0 }
+
+-- create bounding wall
+local wall1 = display.newRect( 0, display.contentHeight/2, 2, display.contentHeight )
+local wall2 = display.newRect( display.contentWidth/2, 0, display.contentWidth, 2 )
+local wall3 = display.newRect( display.contentWidth, display.contentHeight/2, 2, display.contentHeight )
+local wall4 = display.newRect( display.contentWidth/2, display.contentHeight , display.contentWidth, 2 )
+physics.addBody( wall1, "static", wallMaterial )
+physics.addBody( wall2, "static", wallMaterial )
+physics.addBody( wall3, "static", wallMaterial )
+physics.addBody( wall4, "static", wallMaterial )]]--
+
+-- create player object
+-- Creates the player
+local screenW = display.contentWidth
+local screenH = display.contentHeight
+
+local Player = display.newGroup()
+Player.x = screenW * .5
+Player.y = screenH * .5
+local player1 = display.newImageRect("Spirdy Body.png", 70, 90)
+--player1:scale(.5, .5)
+Player:insert (player1)
+physics.addBody( Player, "dynamic", { density=0.0, friction=0.0, bounce=0.0 } )
+
+-- create overlays for control areas
+--local vArea = display.newRect( display.contentWidth/8, display.contentHeight/2, display.contentWidth/4, display.contentHeight )
+--vArea:setFillColor( .5, 1, .5 )
+--vArea.alpha = 0.4
+--local hArea = display.newRect( (display.contentWidth/8)*5, (display.contentHeight/4)*3, (display.contentWidth/4)*3, display.contentHeight/2 )
+--hArea:setFillColor( 1, .5, .5 )
+--hArea.alpha = 0.4
+
+-- listener function for throttle
+local function sliderListener ( event )
+
+	local tempX -- localized variable for storing calculations
+	print( "slider at "..event.value.."%" )
+	print(event.target.id.." is in use")
+	print(event.target)
+	
+	-- check if slider value is greater than the neutral range max
+	if ( event.value > neutralMax ) then
+		-- set the direction force based on slider returning value
+		if ( event.target.id == "hSlider" ) then
+			-- calculate a positive value for moving right
+			tempX = ((event.value - neutralMax)*2.2)/100 -- multiply by 2.2 and divide by 100 to get a percentage of max speed
+			-- calculate force by multiplying player speed by the temp value holding the calculated movement percentage
+			xSpeed = plSpeed * tempX
+		elseif ( event.target.id == "vSlider" ) then
+			-- calculate a negative value for moving up
+			tempX = ((-event.value + neutralMax)*2.2)/100 -- multiply by 2.2 and divide by 100 to get a percentage of max speed
+			-- calculate force by multiplying player speed by the temp value holding the calculated movement percentage
+			ySpeed = plSpeed * tempX
+		end
+	elseif ( event.value < neutralMin ) then
+		if ( event.target.id == "hSlider" ) then
+			-- calculate a negtive value for moving left
+			tempX = ((-neutralMin + event.value)*2.2)/100 -- multiply by 2.2 and divide by 100 to get a percentage of max speed
+			-- calculate force by multiplying player speed by the temp value holding the calculated movement percentage
+			xSpeed = plSpeed * tempX
+		elseif ( event.target.id == "vSlider" ) then
+			-- calculate a positive value for moving down
+			tempX = ((neutralMin - event.value)*2.2)/100 -- multiply by 2.2 and divide by 100 to get a percentage of max speed
+			-- calculate force by multiplying player speed by the temp value holding the calculated movement percentage
+			ySpeed = plSpeed * tempX
+		end
+	--[[else
+		-- if the slider position is within neutral range set corresponding directional force to 0
+		if ( event.target.id == "hSlider" ) then
+			xSpeed = 0
+		elseif ( event.target.id == "vSlider" ) then
+			ySpeed = 0
+		end]]--
+	end
+end
+
+-- create horizontal throttle control
+local hSlider = widget.newSlider
+{
+	id = "hSlider",
+	top	= display.contentHeight - 40,
+	left = display.contentWidth - 160,
+	orientation = "horizontal",
+	width = 150,
+	value = 50,
+	listener = sliderListener
+}
+
+-- create vertical throttle control
+local vSlider = widget.newSlider
+{
+	id = "vSlider",
+	top	= 10,
+	left = 10,
+	orientation = "vertical",
+	height = 150,
+	value = 50,
+	listener = sliderListener
+}
+
+-- thruster function
+local function thruster ()
+	-- only apply force if at least one value not equal to 0
+	if ( xSpeed ~= 0 or ySpeed ~= 0 ) then
+		-- rule set 1: apply force
+		if ( ruleSet == 1 ) then
+			Player:applyForce( xSpeed, ySpeed, Player.x, Player.y )
+			print( Player:getLinearVelocity() )
+		-- rule set 2: set linear velocity
+		elseif ( ruleSet == 2 ) then
+			Player:setLinearVelocity( xSpeed*vMultiplier, ySpeed*vMultiplier )
+		end
+	end
+end
+
+-- initialize timer continuously perform thruster function infinitely until stopped
+timer.performWithDelay( 100, thruster, 0 )
+
+-- create radio button group
+--local radioGroup = display.newGroup()
+
+-- Handle press events for the buttons
+--[[local function onSwitchPress( event )
+    local switch = event.target
+    if ( switch.id == "RadioButton1" ) then
+		ruleSet = 1
+	elseif ( switch.id == "RadioButton2" ) then
+		ruleSet = 2
+	end
+end
+
+-- Create three associated radio buttons (inserted into the same display group)
+local radioButton1 = widget.newSwitch
+{
+    left = display.contentWidth - 80,
+    top = 20,
+    style = "radio",
+    id = "RadioButton1",
+    initialSwitchState = true,
+    onPress = onSwitchPress
+}
+radioGroup:insert( radioButton1 )
+
+local radioButton2 = widget.newSwitch
+{
+    left = display.contentWidth - 40,
+    top = 20,
+    style = "radio",
+    id = "RadioButton2",
+    onPress = onSwitchPress
+}
+radioGroup:insert( radioButton2 )]]--
+
+
+-- touch listener function
+local touchListener = function( event )
+	if ( event.phase == "began" ) then
+		print(event.target)
+		local qtrX = display.contentWidth / 4
+		local halfY = display.contentHeight / 2
+		print("event X: "..event.x.." event Y: "..event.y.." quarter X: "..qtrX.." half Y: "..halfY)
+        if ( event.target ~= "hSlider" or event.target ~= "vSlider" ) then
+			if ( event.x < (display.contentWidth / 4) ) then
+				-- set event target to slider handle
+				event.target = vSlider._handle 
+				-- trigger slider touch event
+				vSlider:touch(event)
+			else
+				if ( event.y > (display.contentHeight / 2) ) then
+					-- set event target to slider handle
+					event.target = hSlider._handle
+					hSlider.isFocus = true
+					-- trigger slider touch event
+					hSlider:touch(event)
+				end
+			end
+		end
+	end
+end
+
+Runtime:addEventListener( "touch", touchListener )

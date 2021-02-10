@@ -1,0 +1,72 @@
+-- This is the class that houses the analog stick for normal mode
+
+system.getInfo("model")
+
+--Hide status bar from the beginning
+display.setStatusBar( display.HiddenStatusBar )
+local MyStick
+
+--calls the analogStick class
+local Analog   = require("analogStick")
+ 
+local screenW = display.contentWidth
+local screenH = display.contentHeight
+local Text = display.newText( " ", screenW*.6, screenH-20, native.systemFont, 15 )
+ 
+-- Creates the player
+local Player = display.newGroup()
+Player.x = screenW * .5
+Player.y = screenH * .5
+local player1 = display.newImageRect("Spirdy Body.png", 70 ,90)
+Player:insert (player1)
+physics.addBody( Player, "dynamic", { density=0, friction=0.0, bounce=0.0 } )
+
+--local playerForwardData = graphics.newImageSheet("spirdy_sprite.png", SheetInfo)
+
+
+
+-- CREATE ANALOG STICK
+MyStick = Analog.NewStick( 
+        {
+        x             = 55,
+        y             = 265,
+        thumbSize     = 25,
+        borderSize    = 45, 
+        snapBackSpeed = .75, 
+        R             = 255,
+        G             = 255,
+        B             = 255
+        } )
+
+--Tap to move Analog
+ function  moveAnalog(e)
+    if e.phase == "began" then
+   
+    --tapAnalog = transition.to(MyStick,{time=0,x=e.x,y=e.y})
+    MyStick.x = e.x
+    MyStick.y = e.y
+    e.target = MyStick.Thumb
+    e.phase = "began"
+    MyStick.onDrag(e)
+
+elseif e.phase == "moved" then
+
+    timer.performWithDelay(0,transition.cancel(tapAnalog))
+ 
+end
+
+   
+end
+
+Runtime:addEventListener("touch",moveAnalog)
+
+--function to move ship
+--MyStick:move(Object, Speed, Move:T/F)
+ function main( event )
+        
+        -- MOVE THE SHIP
+        MyStick:move(Player, 12.0, true)
+
+end
+ 
+Runtime:addEventListener( "enterFrame", main )
