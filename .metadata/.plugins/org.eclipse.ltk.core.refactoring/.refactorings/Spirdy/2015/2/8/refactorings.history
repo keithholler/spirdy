@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename source module &apos;bgScene.lua&apos; to &apos;bgMain.lua&apos;&#x0D;&#x0A;- Original element: &apos;(default package).bgScene.lua&apos;&#x0D;&#x0A;- Renamed element: &apos;(default package).bgMain.lua&apos;" description="Rename source module &apos;bgScene.lua&apos;" flags="589830" id="org.eclipse.dltk.ui.rename.sourcemodule" input="/src&lt;{bgScene.lua" name="bgMain.lua" stamp="1424368307750" version="1.0"/>
-</session>
